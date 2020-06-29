@@ -1,0 +1,4 @@
+1. "SIR_Parameters_Italy1" and "SIR_Parameters_Italy2" are the same file except the latter gives an option to change the step size which makes the curve smoother. The first file uses three state variables whereas the second file uses four states (C is considered as a state).
+2. Program 3 and 4 are used to plot multiple results as beta changes its value (in %) and to plot the corresponding area.
+3. Program 3 is for a variable beta, constant gamma.
+4. Program 4 is for a variable beta, variable gamma.

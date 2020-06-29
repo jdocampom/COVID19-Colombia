@@ -1,0 +1,11 @@
+Program 2 in "Update 4" has a new variable control parameter "c". This is the only difference comparing to the other program in the same folder.
+If c=1, then Program 2 is exactly similar to Program 1 in the same folder. 
+If c=0, the infection rate function in Program 2 is similar to the one in "SimCOVID5\SimCOVID4_MATLAB_Simulink\All_Countries\3_NEW_Generalized_Detailed".
+
+This model gives a wide range of control and prediction. For instance, you can use it for three versions of prediction:
+(1) pessimistic prediction (c=0.0). You expect a relatively higher number of infectious (unless the infection rate is too small to observe the difference).
+(2) optimistic prediction  (c=1.0). You expect a relatively lower number of infectious (unless the infection rate is too small to observe the difference).
+(3) moderate prediction    (c=0.5). An average range of infectious (remember, the function is exponential not linear).
+The parameter "c" can go beyond 1 if it is not normalized.
+
+Do not forget to vary "MaxNumChanges" as well starting from a low value (2, 3, ...) with the variation of "c" since this is a generalized method for all worlwide countries. Please read other notes in the files as you use them.

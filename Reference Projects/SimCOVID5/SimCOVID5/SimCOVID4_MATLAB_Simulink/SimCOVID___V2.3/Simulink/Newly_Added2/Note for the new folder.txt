@@ -1,0 +1,4 @@
+Simpler models of SIR are presented here in this folder. 
+1. Variable beta, constant gamma (see L. Zhong, L. Mu1, J. Li, J. Wang, Z. Yin, and D. Liu, “Early Prediction of the 2019 Novel Coronavirus Outbreak in the Mainland China Based on Simple Mathematical Model”, DOI: 10.1109/ACCESS.2020.2979599, pp. 51761 – 51769, Vol. 8, 2020. Available at:
+   https://ieeexplore.ieee.org/document/9028194)
+2. Variable beta and gamma but without exponential function for the beta function

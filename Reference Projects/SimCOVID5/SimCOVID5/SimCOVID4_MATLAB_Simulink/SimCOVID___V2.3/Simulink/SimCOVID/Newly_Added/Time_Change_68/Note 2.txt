@@ -1,0 +1,13 @@
+SimCOVID Version 1.1
+by
+Ismael Abdulrahman, April 2020
+
+Note:
+(1) The Excel sheet data used with this program is avilable at:
+    https://www.ecdc.europa.eu/en/geographical-distribution-2019-ncov-cases
+
+(2) The Simulink program was created using R2020a. The Simulink file was also converted to the previous versions and attached but not checked.
+    
+(3) The full set of programs are available at:
+    https://www.mathworks.com/matlabcentral/fileexchange/75025-simcovid-an-open-source-simulation-program-for-the-covid-19
+    https://www.researchgate.net/publication/340600580_SimCOVID_An_Open-Source_Simulink-Based_Program_for_Simulating_the_COVID-19_Epidemic

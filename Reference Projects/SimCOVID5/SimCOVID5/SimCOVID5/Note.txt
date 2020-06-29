@@ -1,0 +1,17 @@
+Method 1 (Update 1): This method uses the difference between unity and the ratio between the "instantaneous time" and the "length of simulation time" for the beta function.
+Method 2 (Update 2): This method uses also the same ratio above except the length of the simulation is variable determined by the program.
+Method 3 (Update 3): This method is more general as the beta function is independent of the length of simulation time and an exponential ratio is used. Change the simulation time to get the short-, medium-, and long-term prediction.
+Method 4 (Update 4): This method is the same as Method 3 except (1) the recovery rate is also a variable quantity "sigmoid function" (2) The difference quantity (Cm-Csimulated) is the objective function to be minimized (It was "Im-Isimulated"). Use this method first.
+
+You can also use the programs in:
+"SimCOVID4_MATLAB_Simulink\All_Countries\3_NEW_Generalized_Detailed"
+to predict the future outbreak if (and only if) the spread has passed the peak due to the fact that this program uses the last beta value for the future prediction. If R0 > 1 (i.e, the outbreak has not yet passed the peak), this lets the prediction diverge the limits.
+
+Important Notes:
+----------------
+1) For estimation, start with a low value of "MaxNumChanges" > 1, that is, 2, 3, 4, 5, and so on. You can increase it if you have enough data or the outbreak passed the peak. Typical values 3-5.
+   t0=findchangepts(Im,'Statistic','linear','MaxNumChanges',2); % start with 2, 3,...
+
+2) In general, try first Method-4, then methods-3, 2, 1, and lastly the one in the note. Change the initial values, their limits, and the solver options to get better results, if needed.
+
+3) A new control parameter "c" is added to the program in Update 4. Please read the notes in the folder. 
