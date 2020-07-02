@@ -4,10 +4,10 @@
 data     = readtable('Colombia_COVID19.csv'); 
 [row,col]= size(data); 
 time     = [1:1:row]';                     %days until today 
-n=10e6;                                  %population 
+n=length(time)*1e3;                                  %population 
 infected_real   = table2array(data(:,3)); 
 recovered_real  = table2array(data(:,5)); 
-susceptible_real=n-infected_real-recovered_real; 
+susceptible_real = n - infected_real-recovered_real; 
 
 %% Computing beta and gamma 
 b=n*[0 diff(susceptible_real)']./(-1.*(susceptible_real.*infected_real)); 
